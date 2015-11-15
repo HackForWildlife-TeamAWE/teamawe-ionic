@@ -3,7 +3,7 @@
  */
 angular.module('starter.directives',[]).directive('menu', function ($rootScope) {
   return {
-    templateUrl: "/templates/navigation.html",
+    templateUrl: "/templates/navigation-menu.html",
     restrict: 'A',
     link: function (scope, elem, attrs) {
       scope.search = function(){
