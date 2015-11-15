@@ -4,6 +4,7 @@
     <list default="true" id="cd188774-d391-45bf-b352-56883599f3c7" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scss/components/_habitap-footer.scss" afterPath="$PROJECT_DIR$/scss/components/_habitap-footer.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/js/Directives/footer.js" afterPath="$PROJECT_DIR$/www/js/Directives/footer.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/templates/footer-tabs.html" afterPath="$PROJECT_DIR$/www/templates/footer-tabs.html" />
     </list>
     <ignored path="Wildlife.iws" />
@@ -28,9 +29,22 @@
       <file leaf-file-name="footer-tabs.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/www/templates/footer-tabs.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-2.6666667">
-              <caret line="4" column="8" selection-start-line="4" selection-start-column="8" selection-end-line="4" selection-end-column="8" />
+            <state vertical-scroll-proportion="-16.0">
+              <caret line="24" column="82" selection-start-line="24" selection-start-column="70" selection-end-line="24" selection-end-column="82" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="footer.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/www/js/Directives/footer.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="18" column="39" selection-start-line="18" selection-start-column="39" selection-end-line="18" selection-end-column="39" />
+              <folding>
+                <element signature="e#0#40#0" expanded="false" />
+                <element signature="e#768#808#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -38,8 +52,8 @@
       <file leaf-file-name="_habitap-footer.scss" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/scss/components/_habitap-footer.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.22684564">
-              <caret line="20" column="22" selection-start-line="20" selection-start-column="22" selection-end-line="20" selection-end-column="22" />
+            <state vertical-scroll-proportion="0.8791946">
+              <caret line="62" column="23" selection-start-line="62" selection-start-column="23" selection-end-line="62" selection-end-column="23" />
               <folding />
             </state>
           </provider>
@@ -75,7 +89,6 @@
         <option value="$PROJECT_DIR$/www/templates/map.html" />
         <option value="$PROJECT_DIR$/www/index.html" />
         <option value="$PROJECT_DIR$/www/js/Directives/navigation.js" />
-        <option value="$PROJECT_DIR$/www/js/Directives/footer.js" />
         <option value="$PROJECT_DIR$/scss/_vars.scss" />
         <option value="$PROJECT_DIR$/www/templates/friends.html" />
         <option value="$PROJECT_DIR$/scss/components/_friends.scss" />
@@ -83,6 +96,7 @@
         <option value="$PROJECT_DIR$/www/templates/detail.html" />
         <option value="$PROJECT_DIR$/scss/components/_manifest.scss" />
         <option value="$PROJECT_DIR$/www/templates/footer-tabs.html" />
+        <option value="$PROJECT_DIR$/www/js/Directives/footer.js" />
         <option value="$PROJECT_DIR$/scss/components/_habitap-footer.scss" />
       </list>
     </option>
@@ -1378,17 +1392,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/www/js/Directives/footer.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="3" column="35" selection-start-line="3" selection-start-column="35" selection-end-line="3" selection-end-column="35" />
-          <folding>
-            <element signature="e#0#40#0" expanded="false" />
-            <element signature="e#370#410#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/www/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.72483224">
@@ -1477,18 +1480,29 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/www/js/Directives/footer.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="18" column="39" selection-start-line="18" selection-start-column="39" selection-end-line="18" selection-end-column="39" />
+          <folding>
+            <element signature="e#0#40#0" expanded="false" />
+            <element signature="e#768#808#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/www/templates/footer-tabs.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-2.6666667">
-          <caret line="4" column="8" selection-start-line="4" selection-start-column="8" selection-end-line="4" selection-end-column="8" />
+        <state vertical-scroll-proportion="-16.0">
+          <caret line="24" column="82" selection-start-line="24" selection-start-column="70" selection-end-line="24" selection-end-column="82" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/scss/components/_habitap-footer.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.22684564">
-          <caret line="20" column="22" selection-start-line="20" selection-start-column="22" selection-end-line="20" selection-end-column="22" />
+        <state vertical-scroll-proportion="0.8791946">
+          <caret line="62" column="23" selection-start-line="62" selection-start-column="23" selection-end-line="62" selection-end-column="23" />
           <folding />
         </state>
       </provider>
