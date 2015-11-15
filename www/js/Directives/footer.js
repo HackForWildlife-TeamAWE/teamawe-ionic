@@ -6,7 +6,6 @@ angular.module('starter.directives').directive('footer', function ($rootScope, $
     templateUrl: "/templates/footer-tabs.html",
     restrict: 'A',
     link: function (scope, elem, attrs) {
-      console.log($state.current.name);
       if($state.current.name == 'home'){
         scope.timelineActive = true;
       }

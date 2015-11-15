@@ -1,11 +1,8 @@
 angular.module('starter.controllers')
 
 .controller('WelcomeCtrl', function($scope, $timeout, $state) {
-  // $timeout(function(){
-  //   $state.go('home');
-  // }, 2000);
-  //
   var times = 3000;
+
   $scope.currentIndex = {
     index: 0
   };
