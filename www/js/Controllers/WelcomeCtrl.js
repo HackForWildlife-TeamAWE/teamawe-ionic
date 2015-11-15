@@ -14,7 +14,6 @@ angular.module('starter.controllers')
 
   function updateIndex(){
 
-    console.log('scope', $scope.currentIndex);
     $scope.currentIndex.index++;
 
     if ($scope.currentIndex.index < 4){
