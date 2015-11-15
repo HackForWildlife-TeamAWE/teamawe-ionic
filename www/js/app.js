@@ -54,6 +54,12 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services','s
     controller: 'HomeCtrl'
   })
 
+  .state('detail', {
+    url: '/detail',
+    templateUrl: 'templates/detail.html',
+    controller: 'DetailCtrl'
+  })
+
   .state('friends', {
     url: '/friends',
     templateUrl: 'templates/friends.html',
