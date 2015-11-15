@@ -41,29 +41,61 @@ angular.module('starter.controllers', [])
     enableFriends: true
   };
 })
-.controller('MapCtrl', function($scope, $http) {
-  $scope.map = { center: { latitude: 0.1930, longitude: 37.42 }, zoom: 14 };
+.controller('MapCtrl', function($scope, $http, $timeout) {
+  $scope.map = { center: { latitude: 0.1930, longitude: 37.44 }, zoom: 15 };
   $scope.markers = [];
+  $scope.date = new Date(2015,0,15);
+
+  var monthNames = [
+    "January", "February", "March",
+    "April", "May", "June", "July",
+    "August", "September", "October",
+    "November", "December"
+  ];
+
+  //$scope.day = 15;
+  //$scope.month= 1;
+  //$scope.year = 2015;
+  $scope.formatDate = function(){
+    return monthNames[$scope.date.getMonth()] + ' ' + $scope.date.getDate() + ', ' + $scope.date.getFullYear();
+  }
+  $scope.allMarkers = [];
   var idKey = "id";
   function init(){
     //get location data for animal
     $http.get('http://teamawe.herokuapp.com/api/locations').then(function(results){
       if(results.data.success){
-        var ndx = 0;
-        var locations = getDayLocations(results.data.data,15,1,2015);
-        _.each(locations, function(mapItem){
-          addMarker(mapItem.latitude,mapItem.longitude,'Walter', ndx);
-          ndx++;
-        });
-        //map.fitBounds(bounds);
+        $scope.allMarkers = results.data.data;
+        var locations = getDayLocations($scope.allMarkers);
+        updateMap(locations);
       }
     })
   }
-
-  function getDayLocations(locations, day, month, year){
+  $scope.nextDay = function(){
+    clearMap();
+    $scope.date.setDate($scope.date.getDate() + 1);
+    var locations = getDayLocations($scope.allMarkers);
+    updateMap(locations);
+  }
+  function clearMap(){
+    $scope.markers = [];
+    ndx = 0;
+  }
+  var ndx = 0;
+  function updateMap(locations){
+    $timeout(function(){
+      if(ndx < locations.length){
+        var mapItem = locations[ndx];
+        addMarker(mapItem.latitude,mapItem.longitude,'Walter', ndx);
+        ndx++;
+        updateMap(locations)
+      }
+    }, 500);
+  }
+  function getDayLocations(locations){
     return _.filter(locations,function(location){
       var date = new Date(new Date(location.date));
-      return date.getDate() == day && month == (date.getMonth()+1) && date.getFullYear() == year;
+      return date.getDate() == $scope.date.getDate() && date.getMonth() == $scope.date.getMonth() && date.getFullYear() == $scope.date.getFullYear();
     })
   }
 
@@ -71,6 +103,7 @@ angular.module('starter.controllers', [])
     var myLatLng = {latitude: lat, longitude: lng, title:name};
     myLatLng[idKey] = ndx;
     $scope.markers.push(myLatLng);
+    $scope.$digest();
   }
   init();
 });
