@@ -2,21 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cd188774-d391-45bf-b352-56883599f3c7" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/img/animal120.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/img/heart365.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/img/location59.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/img/rectangle30.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/img/rectangle30.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/js/Directives/footer.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scss/_vars.scss" afterPath="$PROJECT_DIR$/scss/_vars.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scss/components/_.angular-google-map-container.scss" afterPath="$PROJECT_DIR$/scss/components/_.angular-google-map-container.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scss/components/_habitap-footer.scss" afterPath="$PROJECT_DIR$/scss/components/_habitap-footer.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scss/components/_manifest.scss" afterPath="$PROJECT_DIR$/scss/components/_manifest.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/index.html" afterPath="$PROJECT_DIR$/www/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/js/Directives/navigation.js" afterPath="$PROJECT_DIR$/www/js/Directives/navigation.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/templates/footer-tabs.html" afterPath="$PROJECT_DIR$/www/templates/footer-tabs.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/templates/map.html" afterPath="$PROJECT_DIR$/www/templates/map.html" />
     </list>
     <ignored path="Wildlife.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -40,8 +26,8 @@
       <file leaf-file-name="footer-tabs.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/www/templates/footer-tabs.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.24161074">
-              <caret line="10" column="32" selection-start-line="10" selection-start-column="32" selection-end-line="10" selection-end-column="32" />
+            <state vertical-scroll-proportion="0.36241612">
+              <caret line="15" column="26" selection-start-line="15" selection-start-column="26" selection-end-line="15" selection-end-column="26" />
               <folding />
             </state>
           </provider>
@@ -1525,6 +1511,22 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/www/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-20.0">
+          <caret line="30" column="37" selection-start-line="30" selection-start-column="37" selection-end-line="30" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scss/components/_habitap-footer.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-19.333334">
+          <caret line="29" column="24" selection-start-line="29" selection-start-column="24" selection-end-line="29" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/www/js/Directives/footer.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1544,26 +1546,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/www/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-20.0">
-          <caret line="30" column="37" selection-start-line="30" selection-start-column="37" selection-end-line="30" selection-end-column="37" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/scss/components/_habitap-footer.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-19.333334">
-          <caret line="29" column="24" selection-start-line="29" selection-start-column="24" selection-end-line="29" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/www/templates/footer-tabs.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.24161074">
-          <caret line="10" column="32" selection-start-line="10" selection-start-column="32" selection-end-line="10" selection-end-column="32" />
+        <state vertical-scroll-proportion="0.36241612">
+          <caret line="15" column="26" selection-start-line="15" selection-start-column="26" selection-end-line="15" selection-end-column="26" />
           <folding />
         </state>
       </provider>
