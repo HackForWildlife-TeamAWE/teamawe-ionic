@@ -1,0 +1,61 @@
+<div menu></div>
+<div class="google-map">
+  <ui-gmap-google-map center='map.center' options='{styles:[
+    {
+        "featureType": "landscape",
+        "elementType": "all",
+        "stylers": [
+            {
+                "color": "#b69439"
+            },
+            {
+                "lightness": "61"
+            },
+            {
+                "saturation": "16"
+            }
+        ]
+    },
+    {
+        "featureType": "poi.park",
+        "elementType": "all",
+        "stylers": [
+            {
+                "color": "#93b439"
+            }
+        ]
+    },
+    {
+        "featureType": "road",
+        "elementType": "all",
+        "stylers": [
+            {
+                "color": "#de8c34"
+            }
+        ]
+    },
+    {
+        "featureType": "transit",
+        "elementType": "all",
+        "stylers": [
+            {
+                "color": "#a54643"
+            }
+        ]
+    },
+    {
+        "featureType": "water",
+        "elementType": "all",
+        "stylers": [
+            {
+                "color": "#83b3c3"
+            }
+        ]
+    }
+]}' zoom='map.zoom'>
+    <ui-gmap-markers  models='markers' options="{icon:'/img/giraffe8.png'}" coords="'self'"  icon="'icon'">
+    </ui-gmap-markers>
+  </ui-gmap-google-map>
+  <span class="date">{{date | date: 'MMMM dd, yyyy'}}</span>
+  <div class="next" ng-click="nextDay();"><i class="ion ion-arrow-right-a"></i></div>
+</div>

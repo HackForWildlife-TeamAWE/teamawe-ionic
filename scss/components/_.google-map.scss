@@ -1,0 +1,24 @@
+.google-map{
+  position:relative;
+  .next{
+    width:50px;
+    background-color:#fcb026;
+    position:absolute;
+    right:20px;
+    bottom:20px;
+    z-index: 1000;
+    font-size:34px;
+    color:white;
+    cursor: pointer;
+    border-radius:5px;
+    text-align: center;
+  }
+  .date{
+    color:white;
+    font-size:30px;
+    font-weight: bold;
+    position:absolute;
+    bottom:25px;
+    left:40%;
+  }
+}
