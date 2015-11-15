@@ -5,6 +5,8 @@
   background-position: 0% 0;
 
   .donate-content-image {
-    width: 100vw;
-  }
+    width: 102vw;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);  }
 }
