@@ -34,10 +34,7 @@
         }
       }
       text-decoration: none;
-      &:hover{
-        img{
-          color:$color-green;
-        }
+      &:hover,&.active{
         span{
           color:$color-green;
         }
@@ -45,25 +42,25 @@
     }
     .timeline{
       background-image:url('/img/rectangle30.png');
-      &:hover{
+      &:hover, &.active{
         background-image:url('/img/rectangle30_green.png');
       }
     }
     .donate{
       background-image:url('/img/heart365.png');
-      &:hover{
+      &:hover, &.active{
         background-image:url('/img/heart365_green.png');
       }
     }
     .friends{
       background-image:url('/img/animal120.png');
-      &:hover{
+      &:hover, &.active{
         background-image:url('/img/animal120_green.png');
       }
     }
     .discover{
       background-image:url('/img/location59.png');
-      &:hover{
+      &:hover, &.active{
         background-image:url('/img/location59_green.png');
       }
     }
