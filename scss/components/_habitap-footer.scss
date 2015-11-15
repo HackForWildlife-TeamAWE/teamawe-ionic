@@ -11,12 +11,12 @@
     float:left;
     width:25%;
     color:white;
-    a{
-      img{
-        position: relative;
-        width:40px;
-        top:10px;
-      }
+    div{
+      //img{
+      //  position: relative;
+      //  width:40px;
+      //  top:10px;
+      //}
       span{
         display: block;
         color:black;
@@ -27,12 +27,27 @@
       text-decoration: none;
       &:hover{
         img{
-          color:#41ad49;
+          color:$color-green;
         }
         span{
-          color:#41ad49;
+          color:$color-green;
         }
       }
+    }
+    .timeline{
+      background-image:url('/img/rectangle30.png');
+      position: relative;
+      width:40px;
+      top:10px;
+    }
+    .donate{
+
+    }
+    .friends{
+
+    }
+    .discover{
+
     }
   }
 }
