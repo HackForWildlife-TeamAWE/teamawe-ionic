@@ -1,10 +1,9 @@
 /**
  * Created by manny on 11/15/15.
  */
-angular.module('starter.directives',[]);
-angular.module('starter.directives').directive('menu', function ($rootScope) {
+angular.module('starter.directives').directive('footer', function ($rootScope) {
   return {
-    templateUrl: "/templates/navigation-menu.html",
+    templateUrl: "/templates/footer-tabs.html",
     restrict: 'A',
     link: function (scope, elem, attrs) {
       //scope.search = function(){
@@ -14,3 +13,6 @@ angular.module('starter.directives').directive('menu', function ($rootScope) {
   };
 });
 
+/**
+ * Created by manny on 11/15/15.
+ */
