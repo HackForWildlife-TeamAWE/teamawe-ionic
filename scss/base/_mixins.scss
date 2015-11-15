@@ -1,0 +1,31 @@
+@mixin clearfix {
+    &:after {
+        clear: both;
+    }
+
+    &:before,
+    &:after {
+        display: table;
+        content: ' ';
+    }
+}
+
+@mixin transition($property: all, $timing: $transition-timing) {
+    transition: $property #{$timing+ms} $transition-ease 0s;
+}
+
+//Breakpoints
+@mixin respond-to-bp($custom-px, $minmax: max){
+
+  @if ($minmax == max) {
+    @media screen and (max-width: px-to-em($custom-px, $font-base-size)){
+      @content;
+    }
+  }
+
+  @else if ($minmax == min){
+    @media screen and (min-width: px-to-em($custom-px, $font-base-size)){
+      @content;
+    }
+  }
+}
