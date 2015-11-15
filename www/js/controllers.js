@@ -25,4 +25,18 @@ angular.module('starter.controllers', [])
   $scope.settings = {
     enableFriends: true
   };
+})
+.controller('MapCtrl', function($scope, $http) {
+  function init(){
+    //get location data for animal
+    $http.get('http://teamawe.herokuapp.com/api/locations').then(function(results){
+       console.log(results)
+    })
+  }
+
+  $scope.settings = {
+    enableFriends: true
+  };
+
+  init();
 });
