@@ -19,16 +19,19 @@
       height:80px;
       text-align: center;
       cursor: pointer;
-      span{
+      .text-container{
+        position: absolute;
+        bottom:0;
         text-align: center;
         color:black;
         display: block;
         text-decoration: none;
         text-transform: uppercase;
         margin-top:10px;
-        position: absolute;
-        bottom: 0;
-        //left:30%;
+        width:100%;
+        span{
+          text-align: center;
+        }
       }
       text-decoration: none;
       &:hover{
