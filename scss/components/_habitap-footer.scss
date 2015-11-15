@@ -11,18 +11,24 @@
     float:left;
     width:25%;
     color:white;
-    div{
-      //img{
-      //  position: relative;
-      //  width:40px;
-      //  top:10px;
-      //}
+    .tab-icon{
+      position: relative;
+      background-repeat: no-repeat;
+      background-position: 50% 20%;
+      background-size:40px;
+      height:80px;
+      text-align: center;
+      cursor: pointer;
       span{
-        display: block;
+        text-align: center;
         color:black;
+        display: block;
         text-decoration: none;
         text-transform: uppercase;
         margin-top:10px;
+        position: absolute;
+        bottom: 0;
+        //left:30%;
       }
       text-decoration: none;
       &:hover{
@@ -36,18 +42,27 @@
     }
     .timeline{
       background-image:url('/img/rectangle30.png');
-      position: relative;
-      width:40px;
-      top:10px;
+      &:hover{
+        background-image:url('/img/rectangle30_green.png');
+      }
     }
     .donate{
-
+      background-image:url('/img/heart365.png');
+      &:hover{
+        background-image:url('/img/heart365_green.png');
+      }
     }
     .friends{
-
+      background-image:url('/img/animal120.png');
+      &:hover{
+        background-image:url('/img/animal120_green.png');
+      }
     }
     .discover{
-
+      background-image:url('/img/location59.png');
+      &:hover{
+        background-image:url('/img/location59_green.png');
+      }
     }
   }
 }
