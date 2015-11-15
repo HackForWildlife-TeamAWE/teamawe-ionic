@@ -1,12 +1,52 @@
-@mixin font-name($font-size: null, $base-size: null){
-	font-family: $font-family-gotham;
-	font-weight: 300;
-	font-style: normal;
-
-	@if ($font-size != null){
-		@include font-size($font-size, $base-size);
-	}
+@font-face {
+  font-family: $font-family-sf;
+  font-weight: 300;
+  src: url("/fonts/SF-Compact-Display-Light.otf");
 }
+
+@font-face {
+  font-family: $font-family-sf;
+  font-weight: 400;
+  src: url("/fonts/SF-Compact-Display-Regular.otf");
+}
+
+@font-face {
+  font-family: $font-family-sf;
+  font-weight: 700;
+  src: url("/fonts/SF-Compact-Display-Bold.otf");
+}
+
+
+@mixin sf-light($font-size: null, $base-size: null){
+  font-family: $font-family-sf;
+  font-weight: 300;
+  font-style: normal;
+
+  @if ($font-size != null){
+    @include font-size($font-size, $base-size);
+  }
+}
+
+@mixin sf-regular($font-size: null, $base-size: null){
+  font-family: $font-family-sf;
+  font-weight: 400;
+  font-style: normal;
+
+  @if ($font-size != null){
+    @include font-size($font-size, $base-size);
+  }
+}
+
+@mixin sf-bold($font-size: null, $base-size: null){
+  font-family: $font-family-sf;
+  font-weight: 700;
+  font-style: normal;
+
+  @if ($font-size != null){
+    @include font-size($font-size, $base-size);
+  }
+}
+
 
 @mixin font-size($font-size, $base-size){
   	@if ($base-size == null) {
@@ -17,4 +57,3 @@
 	  	font-size: px-to-em($font-size, $base-size);
   	}
 }
-

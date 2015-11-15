@@ -1,1 +1,35 @@
-WELCOME
+<ion-view>
+  <ion-content>
+    <div class="welcome-page">
+      <img class="background-image" src="img/welcome.png">
+
+      <div class="message" ng-class="{active: currentIndex.index == 0}">
+        <div>Welcome back,</div>
+        <div>Mackenzie!</div>
+      </div>
+
+      <div class="message" ng-class="{active: currentIndex.index == 1}">
+        <div>This week, African</div>
+        <div>Wildlife Foundation</div>
+        <div>Saved 8 Endangered</div>
+        <div>Zebras.</div>
+      </div>
+
+      <div class="message" ng-class="{active: currentIndex.index === 2}">
+        <div>Over a decade of</div>
+        <div>work in Sebangau,</div>
+        <div>Indonesia shows the</div>
+        <div>orangutan population</div>
+        <div>on the rise!</div>
+      </div>
+
+
+      <ul class="nav-dots">
+        <li class="dot"></li>
+        <li class="dot"></li>
+        <li class="dot"></li>
+      </ul>
+    </div>
+
+  </ion-content>
+</ion-view>
