@@ -1,0 +1,10 @@
+.donate-page {
+  padding-top: $site-header-height;
+  background-image: url('/img/donate_bkgd.jpg');
+  background-size: auto 100%;
+  background-position: 0% 0;
+
+  .donate-content-image {
+    width: 100vw;
+  }
+}
