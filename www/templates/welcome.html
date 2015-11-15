@@ -9,6 +9,7 @@
       </div>
 
       <div class="message" ng-class="{active: currentIndex.index == 1}">
+      <div class="did-you-know">DID YOU KNOW?</div>
         <div>This week, African</div>
         <div>Wildlife Foundation</div>
         <div>Saved 8 Endangered</div>
@@ -16,6 +17,7 @@
       </div>
 
       <div class="message" ng-class="{active: currentIndex.index === 2}">
+        <div class="did-you-know">DID YOU KNOW?</div>
         <div>Over a decade of</div>
         <div>work in Sebangau,</div>
         <div>Indonesia shows the</div>
@@ -25,9 +27,9 @@
 
 
       <ul class="nav-dots">
-        <li class="dot"></li>
-        <li class="dot"></li>
-        <li class="dot"></li>
+        <li class="dot" ng-class="{selected: currentIndex.index == 0}"></li>
+        <li class="dot" ng-class="{selected: currentIndex.index == 1}"></li>
+        <li class="dot" ng-class="{selected: currentIndex.index == 2}"></li>
       </ul>
     </div>
 
